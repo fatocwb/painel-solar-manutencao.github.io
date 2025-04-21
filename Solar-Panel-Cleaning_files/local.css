@@ -205,12 +205,18 @@
   #services-448 .cs-link:hover:before {
     width: 100%;
   }
+ 
+  a {
+    text-decoration: none;
+  }
+
   #services-448 .cs-link:before {
     /* animated underline */
     content: '';
     width: 0%;
     height: 3px;
     background: currentColor;
+    text-decoration: none;
     opacity: 1;
     position: absolute;
     display: block;
