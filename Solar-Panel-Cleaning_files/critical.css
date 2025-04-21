@@ -1,0 +1,285 @@
+/*-- -------------------------- -->
+<---            Hero            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #solar-panel-cleaning {
+    padding: var(--sectionPadding);
+    /*200px - 272px */
+    padding-top: clamp(12.5rem, 15vw, 17rem);
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+  #solar-panel-cleaning .cs-container {
+    width: 100%;
+    /* changes to 100% at tablet */
+    max-width: 34.375em;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* 36px - 100px */
+    gap: clamp(2.25rem, 10vw, 6.25rem);
+  }
+  #solar-panel-cleaning .cs-content {
+    max-width: 39.375rem;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #solar-panel-cleaning .cs-title {
+    /* 31px - 61px */
+    font-size: clamp(1.9375rem, 4.4vw, 3.8125rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: left;
+    max-width: 43.75rem;
+    /* 12px - 24px */
+    margin: 0 0 clamp(0.75rem, 1.5vw, 1.5rem);
+    color: var(--headerColor);
+    position: relative;
+  }
+  #solar-panel-cleaning .cs-color {
+    color: var(--primary);
+    display: block;
+  }
+  #solar-panel-cleaning .cs-text {
+    /* 16px - 25px */
+    font-size: clamp(1rem, 2vw, 1.5625rem);
+    line-height: 1.5em;
+    text-align: left;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    /* 24px - 40px */
+    margin-bottom: clamp(1.5rem, 4.2vw, 3rem);
+    color: var(--bodyTextColor);
+  }
+  #solar-panel-cleaning .cs-button-solid {
+    margin-right: 1.25rem;
+    background-color: var(--primary);
+    color: #fff;
+  }
+  #solar-panel-cleaning .bubbly-button:focus {
+    outline: 0;
+  }
+  #solar-panel-cleaning .bubbly-button:before,
+  #solar-panel-cleaning .bubbly-button:after {
+    content: "";
+    width: 140%;
+    height: 100%;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+  }
+  #solar-panel-cleaning .bubbly-button:before {
+    background-image: radial-gradient(circle, var(--primary) 20%, transparent 20%), radial-gradient(circle, transparent 20%, var(--primary) 20%, transparent 30%), radial-gradient(circle, var(--primary) 20%, transparent 20%), radial-gradient(circle, var(--primary) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--primary) 15%, transparent 20%), radial-gradient(circle, var(--primary) 20%, transparent 20%), radial-gradient(circle, var(--primary) 20%, transparent 20%), radial-gradient(circle, var(--primary) 20%, transparent 20%), radial-gradient(circle, var(--primary) 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+    display: none;
+    top: -75%;
+  }
+  #solar-panel-cleaning .bubbly-button:after {
+    background-image: radial-gradient(circle, var(--primary) 20%, transparent 20%), radial-gradient(circle, var(--primary) 20%, transparent 20%), radial-gradient(circle, transparent 10%, var(--primary) 15%, transparent 20%), radial-gradient(circle, var(--primary) 20%, transparent 20%), radial-gradient(circle, var(--primary) 20%, transparent 20%), radial-gradient(circle, var(--primary) 20%, transparent 20%), radial-gradient(circle, var(--primary) 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+    display: none;
+    bottom: -75%;
+  }
+  #solar-panel-cleaning .bubbly-button.animate:before {
+    display: block;
+    animation: topBubbles ease-in-out 0.75s forwards;
+  }
+  #solar-panel-cleaning .bubbly-button.animate:after {
+    display: block;
+    animation: bottomBubbles ease-in-out 0.75s forwards;
+  }
+  @keyframes topBubbles {
+    0% {
+      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    }
+    50% {
+      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+    }
+    100% {
+      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+  @keyframes bottomBubbles {
+    0% {
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+    }
+    50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+    }
+    100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+  #solar-panel-cleaning .cs-header {
+    /* 14px - 20px */
+    font-size: clamp(0.875rem, 1.5vw, 1.25rem);
+    line-height: 1.5em;
+    width: 100%;
+    /* 40px - 100px */
+    margin: clamp(2.5rem, 5vw, 6.25rem) 0 0.75rem 0;
+    color: var(--bodyTextColor);
+    display: block;
+  }
+  #solar-panel-cleaning .cs-logo-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #solar-panel-cleaning .cs-logo {
+    width: auto;
+    /* 18px - 32px */
+    height: clamp(1.125rem, 1.5vw, 2rem);
+    filter: grayscale(1);
+  }
+  #solar-panel-cleaning .cs-stat-group {
+    width: 100%;
+    /* clips the corners around the border radius */
+    overflow: hidden;
+    border-radius: 1.25rem 0 0 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    position: relative;
+    z-index: 1;
+    aspect-ratio: 0.92696629;
+  }
+  #solar-panel-cleaning .cs-stat-box {
+    width: 50%;
+    /* changes at tablet */
+    height: 9.125rem;
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+    /* 24px - 48px */
+    padding: clamp(1.5rem, 3vw, 3rem);
+    background-color: rgba(12, 59, 143, 0.96);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #solar-panel-cleaning .cs-stat-box.stat-box2 {
+    background-color: rgba(15, 77, 184, 0.96);
+  }
+  #solar-panel-cleaning .stat-box2 {
+    background-color: rgba(15, 77, 184, 0.96);
+  }
+  #solar-panel-cleaning .cs-stat {
+    /* 25px - 61px */
+    font-size: clamp(1.5625rem, 3.5vw, 3.8125rem);
+    line-height: 1.2em;
+    text-align: left;
+    margin: 0;
+    display: block;
+  }
+  #solar-panel-cleaning .rated-group {
+    font-size: 0.8rem;
+    width: 8.125em;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #solar-panel-cleaning .rated-group .cs-desc {
+    font-size: 1em;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 0.5em;
+  }
+  #solar-panel-cleaning .stars {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.25em;
+  }
+  #solar-panel-cleaning .stat-img {
+    width: 2.5em;
+    height: auto;
+  }
+  #solar-panel-cleaning .cs-desc {
+    /* 14px - 20px */
+    font-size: clamp(0.875rem, 1.6vw, 1.25rem);
+    line-height: 1.2em;
+    margin: 0.25rem 0 0 0;
+    display: block;
+  }
+  #solar-panel-cleaning .cs-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #solar-panel-cleaning .cs-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #solar-panel-cleaning {
+    padding-right: 0;
+  }
+  #solar-panel-cleaning .cs-container {
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  #solar-panel-cleaning .cs-content {
+    width: 45%;
+    padding: 0;
+  }
+  #solar-panel-cleaning .cs-stat-group {
+    width: 45%;
+    max-height: 46.0625rem;
+    aspect-ratio: 0.92647059;
+    flex: none;
+  }
+  #solar-panel-cleaning .cs-stat-box {
+    /* 126px - 221px */
+    height: clamp(7.875rem, 18vw, 13.8125rem);
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 1500px) {
+  #solar-panel-cleaning .rated-group {
+    font-size: 1rem;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #solar-panel-cleaning .cs-title,
+  body.dark-mode #solar-panel-cleaning .cs-text,
+  body.dark-mode #solar-panel-cleaning .cs-header,
+  body.dark-mode #solar-panel-cleaning .cs-button-transparent {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #solar-panel-cleaning .cs-color {
+    color: var(--secondary);
+  }
+  body.dark-mode #solar-panel-cleaning .cs-button-solid {
+    background-color: var(--secondary);
+  }
+  body.dark-mode #solar-panel-cleaning .cs-logo {
+    filter: grayscale(1) brightness(400%);
+  }
+}
